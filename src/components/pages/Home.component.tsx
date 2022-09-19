@@ -27,7 +27,7 @@ function Home(){
                     {usersArray?.map((user) => (
                     <tr>
                         {Object.values(user).map((value) => (
-                            typeof(value) =="string"?
+                            typeof(value) !="object"?
                             <td>{value}</td>:
                             <td>{value.first+""+ value.last}</td>
                    ))}
